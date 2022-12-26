@@ -1,4 +1,4 @@
-export const API_KEY = "AIzaSyAsNKJ_IKhRYcpPqXuxIrqEpEibTT41-kY";
+export const API_KEY = "";
 
 export const URL_MAPS = (
   lat,
