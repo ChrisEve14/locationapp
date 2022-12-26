@@ -9,11 +9,12 @@ import { ImageSelector, LocationSelector } from "../../components";
 const NewPlace = ({ navigation }) => {
   const [title, setTitle] = useState("");
   const [image, setImage ] = useState(null);
+  const [coords, setCoords] = useState(null);
 
   const dispatch = useDispatch();
 
   const onHandleSubmit = () => {
-    dispatch(savePlace({ title, image }));
+    dispatch(savePlace({ title, image, coords }));
     navigation.navigate("Places");
   };
 
@@ -25,9 +26,8 @@ const NewPlace = ({ navigation }) => {
     setImage(uri);
   };
 
-  const onLocationPicker = ({ lat, lng }) => {
-    // console.warn(location);
-    // setCoords(location);
+  const onLocationPicker = (location) => {
+    setCoords(location);
   };
 
   return (

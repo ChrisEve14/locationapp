@@ -18,7 +18,7 @@ const ImageSelector = ({ onImagePicker }) => {
             quality: 0.7,
           });
       
-          console.warn("image", image);
+          // console.warn("image", image);
       
           setPickedUrl(image.uri);
           onImagePicker(image.uri);
