@@ -24,10 +24,26 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.chriseve.realnewlocationapp",
+      "permissions":[
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAsNKJ_IKhRYcpPqXuxIrqEpEibTT41-kY"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f32a192-f923-4b1a-bfbe-7345a57fa7a5"
+      }
     }
   }
 }
